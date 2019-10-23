@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import './contact.css';
+import './Contact.css';
 
 
 class Contact extends Component {
       render (){
         return(
-            <div className="Contact">
+            <div className="Contact" key={this.props.id}>
                 <img className="avatar" src ={this.props.avatar} alt=""></img>
                 <div>
                     <h3 className="name">{this.props.name}</h3>
